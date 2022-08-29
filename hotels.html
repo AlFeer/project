@@ -10,6 +10,7 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="icon" href="/assets/images/72a7f233ba370e807553b5e1a423ba32.png">
     <script src="https://kit.fontawesome.com/2914d5f44a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Vertigo</title>
 </head>
 
@@ -51,116 +52,10 @@
     </header>
 
     <main>
-        <!-- Find your next stay -->
-        <div class="section-1">
-            <img src="/assets/images/Logo/MUMGH-P0765-Inner-Courtyard-Hotel-Exterior-Evening.16x9.jpg" alt="">
-            <div class="container">
-                <p class="title text-light"><b>Find your next stay</b></p>
-                <p class="subtitle text-light">Search low prices on hotels, homes and much more...</p>
-            </div>
-        </div>
-        <!-- Inputs -->
-        <div class="section-2">
-            <div class="container">
-                <div class="inputs">
-                    <div class="box">
-                        <label>Check-in:</label> <br>
-                        <input type="date" placeholder="Check-in">
-                    </div>
-                    <div class="box">
-                        <label>Check-out:</label> <br>
-                        <input type="date" placeholder="Check-out">
-                    </div>
-                    <div class="box">
-                        <label>Adults:</label> <br>
-                        <input type="number" placeholder="2">
-                    </div>
-                    <div class="box">
-                        <label>Children:</label> <br>
-                        <input type="number" placeholder="0">
-                    </div>
-                    <div class="search">
-                        <button type"search" class="btn btn-danger">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Promotions -->
-        <div class="section-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12">
-                        <img class="advertisement" src="/assets/images/Promotions/02_Screenshot.jpg" alt="">
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <img class="advertisement2"
-                            src="/assets/images/Promotions/instagram-travel-agency-video-template-ad1f67269fb9c355db1268969293fc4c_screen.jpg"
-                            alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Top Countries -->
-        <div class="section-4">
-            <div class="container">
-                <div class="topic">
-                    <p><b>Top Countries To Visit</b></p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="blog3.html"><img class="flag" src="/assets/images/Countries/spain-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="blog3.html"><b>Spain</b></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="/blog-UK.html"><img class="flag" src="/assets/images/Countries/uk-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="/blog-UK.html"><b>United Kingdom</b></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="/blog-Norway.html"><img class="flag" src="/assets/images/Countries/Norway-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="/blog-Norway.html"><b>Norway</b></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="/blog-france.html"><img class="flag" src="/assets/images/Countries/France-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="/blog-france.html"><b>France</b></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="/blog-USA.html"><img class="flag" src="/assets/images/Countries/USA-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="/blog-USA.html"><b>USA</b></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-sm-6">
-                        <div class="card">
-                            <a href="/blog-Brazil.html"><img class="flag" src="/assets/images/Countries/brazil-flag.png"
-                                    alt=""></a>
-                            <a class="title" href="/blog-Brazil.html"><b>Brazil</b></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Some Recomendations -->
         <div class="section-5">
             <div class="container">
-                <div class="topic">
-                    <p><b>Some Recomendations For You</b></p>
-                </div>
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 hotels">
                         <div class="card">
                             <img src="/assets/images/Hotels/TheIslanderInn.jpg" alt="">
                             <span>
@@ -174,7 +69,7 @@
                             <p class="price">From: <b>$145.00</b> / night</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 hotels">
                         <div class="card">
                             <img src="/assets/images/Hotels/Ilunion Madrid.jpg" alt="">
                             <span>
@@ -189,7 +84,7 @@
                             <p class="price">From: <b>$326.99</b> / night</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 hotels">
                         <div class="card">
                             <img src="/assets/images/Hotels/DoubleTree.jpg" alt="">
                             <span>
@@ -204,7 +99,135 @@
                             <p class="price">From: <b>$322.00</b> / night</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
+                        <div class="card">
+                            <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
+                            <span>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star checked"></i>
+                            </span>
+                            <a class="title" href="#"><b>London Excel Apartment </b></a>
+                            <p class="subtitle">UK, London</p>
+                            <hr>
+                            <p class="price">Price: <b>$458.35</b> / night</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 hotels">
                         <div class="card">
                             <img src="/assets/images/Hotels/LondonExcelApartment.jpg" alt="">
                             <span>
@@ -221,87 +244,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Blogs -->
-        <div class="section-6">
-            <div class="container">
-                <div class="topic">
-                    <p><b><u>Get inspiration for your next trip</u></b></p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card">
-                            <a href="">
-                                <img src="/assets/images/Guide/162689297(1).jpg" alt="">
-                                <div class="textOnImage">
-                                    <a class="title" href="blog1.html"><b>5 breathtaking stays with private
-                                            pools</b></a>
-                                    <p class="subtitle">Enjoy your holiday reclining by your private infinity or
-                                        panoramic
-                                        plunge pool.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card">
-                            <a href="">
-                                <img src="/assets/images/Guide/disneyland(1).jpg" alt="">
-                                <div class="textOnImage">
-                                    <a class="title" href="blog2.html"><b>5 reasons to visit Disneyland® Paris in
-                                            2022</b></a>
-                                    <p class="subtitle">Discover new rides, extravagant parades and meet childhood
-                                        heroes.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card">
-                            <a href="">
-                                <img src="/assets/images/Guide/spanishCity.jpg" alt="">
-                                <div class="textOnImage">
-                                    <a class="title" href="blog3.html"><b>6 destinations for a Spanish
-                                            sabbatical</b></a>
-                                    <p class="subtitle">Soak up the sun and forget your 9 to 5 in these Spanish
-                                        long-stays.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="card2">
-                            <a href="">
-                                <img src="/assets/images/Guide/1161566238.jpg" alt="">
-                                <div class="textOnImage">
-                                    <a class="title" href="blog4.html"><b>The best city plus beach breaks in the
-                                            world</b></a>
-                                    <p class="subtitle">From busy streets to seaside, you will enjoy the best
-                                        of both
-                                        worlds.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="card2">
-                            <a href="">
-                                <img src="/assets/images/Guide/11pool.jpg" alt="">
-                                <div class="textOnImage">
-                                    <a class="title" href="blog5.html"><b>5 of New York City’s most rooftop
-                                            pools</b></a>
-                                    <p class="subtitle">From Williamsburg with Manhattan views to a luxury
-                                        oasis on Park Avenue.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+
+                <div class="pagination">
+                    <li class="page-item active"><a href="">1</a></li>
+                    <li class="page-item"><a href="">2</a></li>
+                    <li class="page-item"><a href="">3</a></li>
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>
